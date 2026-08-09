@@ -1,2 +1,2 @@
 # GAROCA
-GAROCA = GasRouteCalculate
+GAROCA = GasRouteCalculator
