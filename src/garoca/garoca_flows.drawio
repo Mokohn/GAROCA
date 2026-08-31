@@ -1,0 +1,60 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Seite-1" id="c26U1GTDpQ6GBpion_-a">
+    <mxGraphModel dx="2054" dy="1139" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DH81E__XJdg0CAGIvTXI-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="user-flow" vertex="1">
+          <mxGeometry height="270" width="520" x="30" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DH81E__XJdg0CAGIvTXI-1" edge="1" parent="1" source="BhzRc8fMSwV3nvjSp3U3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="BhzRc8fMSwV3nvjSp3U3-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DH81E__XJdg0CAGIvTXI-2" connectable="0" parent="DH81E__XJdg0CAGIvTXI-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="scans gas receipt" vertex="1">
+          <mxGeometry relative="1" x="-0.0333" y="-1" as="geometry">
+            <mxPoint x="2" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DH81E__XJdg0CAGIvTXI-3" edge="1" parent="1" source="BhzRc8fMSwV3nvjSp3U3-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="BhzRc8fMSwV3nvjSp3U3-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DH81E__XJdg0CAGIvTXI-4" connectable="0" parent="DH81E__XJdg0CAGIvTXI-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="uploads scanned gas receipt" vertex="1">
+          <mxGeometry relative="1" x="-0.3636" as="geometry">
+            <mxPoint x="19" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhzRc8fMSwV3nvjSp3U3-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+          <mxGeometry height="60" width="30" x="80" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="BhzRc8fMSwV3nvjSp3U3-3" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;" value="&lt;div&gt;database (duckdb)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="60" x="460" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="BhzRc8fMSwV3nvjSp3U3-4" parent="1" style="aspect=fixed;sketch=0;html=1;dashed=0;whitespace=wrap;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#2875E2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon2;kubernetesLabel=1;prIcon=api" value="&lt;div&gt;maps api&lt;/div&gt;" vertex="1">
+          <mxGeometry height="48" width="50" x="298" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="DH81E__XJdg0CAGIvTXI-5" edge="1" parent="1" source="BhzRc8fMSwV3nvjSp3U3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="BhzRc8fMSwV3nvjSp3U3-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DH81E__XJdg0CAGIvTXI-6" connectable="0" parent="DH81E__XJdg0CAGIvTXI-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="saves to" vertex="1">
+          <mxGeometry relative="1" x="-0.0488" as="geometry">
+            <mxPoint x="2" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DH81E__XJdg0CAGIvTXI-7" edge="1" parent="1" source="BhzRc8fMSwV3nvjSp3U3-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="BhzRc8fMSwV3nvjSp3U3-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DH81E__XJdg0CAGIvTXI-8" connectable="0" parent="DH81E__XJdg0CAGIvTXI-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="calls" vertex="1">
+          <mxGeometry relative="1" x="-0.125" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BhzRc8fMSwV3nvjSp3U3-5" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/assets/developer/1/Python_Tools_and_SDK.svg;" value="&lt;div&gt;garoca backend&lt;/div&gt;" vertex="1">
+          <mxGeometry height="48" width="48" x="300" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="BhzRc8fMSwV3nvjSp3U3-6" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Miscellaneous-2232/image-644.svg" value="Scanned gas receipt" vertex="1">
+          <mxGeometry height="52" width="60" x="65" y="350" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
