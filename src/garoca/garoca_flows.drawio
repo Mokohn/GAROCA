@@ -95,6 +95,23 @@
         <mxCell id="jIJybd83_vpy0zFH6w9h-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;user-flow&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="20" y="160" as="geometry" />
         </mxCell>
+        <mxCell id="jIJybd83_vpy0zFH6w9h-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;garoca backend&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="105" x="20" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="jIJybd83_vpy0zFH6w9h-9" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/assets/developer/1/Python_Tools_and_SDK.svg;" value="&lt;div&gt;garoca backend&lt;/div&gt;" vertex="1">
+          <mxGeometry height="48" width="48" x="299" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="jIJybd83_vpy0zFH6w9h-11" edge="1" parent="1" source="jIJybd83_vpy0zFH6w9h-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="jIJybd83_vpy0zFH6w9h-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jIJybd83_vpy0zFH6w9h-12" connectable="0" parent="jIJybd83_vpy0zFH6w9h-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="receives scanned gas receipt" vertex="1">
+          <mxGeometry relative="1" x="-0.0294" as="geometry">
+            <mxPoint x="76" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jIJybd83_vpy0zFH6w9h-10" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Miscellaneous-2232/image-644.svg" value="Scanned gas receipt" vertex="1">
+          <mxGeometry height="52" width="60" x="293" y="500" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
