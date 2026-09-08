@@ -1,0 +1,840 @@
+{
+    "id": "48e44671-81a2-4c40-8556-6eaa77952988",
+    "title": "Modelldatenbanken",
+    "product": "lucidchart",
+    "pages": [
+        {
+            "id": "0_0",
+            "title": "Seite 1",
+            "index": 0,
+            "items": {
+                "shapes": [
+                    {
+                        "id": "-iJqwgjdvGNo",
+                        "class": "StickiesStickyNoteBlock",
+                        "textAreas": [
+                            {
+                                "label": "Text",
+                                "text": "route_cache key\nComposite PK: (from_lat, from_lon, to_lat, to_lon)\nCoordinates rounded to 5 decimals.\nNo receipt_id: identical station pairs reuse the cache automatically."
+                            },
+                            {
+                                "label": "ReadonlyAttributionText",
+                                "text": ""
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "8QIqujXZAS6D",
+                        "class": "ERDEntityBlock4",
+                        "textAreas": [
+                            {
+                                "label": "Name",
+                                "text": "receipts"
+                            },
+                            {
+                                "label": "Key1",
+                                "text": "PK"
+                            },
+                            {
+                                "label": "Field1",
+                                "text": "id"
+                            },
+                            {
+                                "label": "Type1",
+                                "text": "UUID NOT NULL"
+                            },
+                            {
+                                "label": "Key2",
+                                "text": "FK"
+                            },
+                            {
+                                "label": "Field2",
+                                "text": "profile_id"
+                            },
+                            {
+                                "label": "Type2",
+                                "text": "UUID NOT NULL"
+                            },
+                            {
+                                "label": "Key3",
+                                "text": "FK"
+                            },
+                            {
+                                "label": "Field3",
+                                "text": "vehicle_id"
+                            },
+                            {
+                                "label": "Type3",
+                                "text": "UUID NOT NULL"
+                            },
+                            {
+                                "label": "Key4",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field4",
+                                "text": "created_at"
+                            },
+                            {
+                                "label": "Type4",
+                                "text": "timestamp NOT NULL"
+                            },
+                            {
+                                "label": "Key5",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field5",
+                                "text": "updated_at"
+                            },
+                            {
+                                "label": "Type5",
+                                "text": "timestamp NOT NULL"
+                            },
+                            {
+                                "label": "Key6",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field6",
+                                "text": "image_path"
+                            },
+                            {
+                                "label": "Type6",
+                                "text": "varchar(1024) NOT NULL"
+                            },
+                            {
+                                "label": "Key7",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field7",
+                                "text": "status"
+                            },
+                            {
+                                "label": "Type7",
+                                "text": "enum(uploaded|processing|needs_review|failed|confirmed) NOT NULL"
+                            },
+                            {
+                                "label": "Key8",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field8",
+                                "text": "error_message"
+                            },
+                            {
+                                "label": "Type8",
+                                "text": "text"
+                            },
+                            {
+                                "label": "Key9",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field9",
+                                "text": "raw_llm_response"
+                            },
+                            {
+                                "label": "Type9",
+                                "text": "JSON"
+                            },
+                            {
+                                "label": "Key10",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field10",
+                                "text": "station_name"
+                            },
+                            {
+                                "label": "Type10",
+                                "text": "varchar(255)"
+                            },
+                            {
+                                "label": "Key11",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field11",
+                                "text": "station_address"
+                            },
+                            {
+                                "label": "Type11",
+                                "text": "varchar(512)"
+                            },
+                            {
+                                "label": "Key12",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field12",
+                                "text": "latitude"
+                            },
+                            {
+                                "label": "Type12",
+                                "text": "decimal(9,6)"
+                            },
+                            {
+                                "label": "Key13",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field13",
+                                "text": "longitude"
+                            },
+                            {
+                                "label": "Type13",
+                                "text": "decimal(9,6)"
+                            },
+                            {
+                                "label": "Key14",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field14",
+                                "text": "receipt_date"
+                            },
+                            {
+                                "label": "Type14",
+                                "text": "DATE"
+                            },
+                            {
+                                "label": "Key15",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field15",
+                                "text": "fuel_type"
+                            },
+                            {
+                                "label": "Type15",
+                                "text": "varchar(64)"
+                            },
+                            {
+                                "label": "Key16",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field16",
+                                "text": "volume_liters"
+                            },
+                            {
+                                "label": "Type16",
+                                "text": "decimal(10,3)"
+                            },
+                            {
+                                "label": "Key17",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field17",
+                                "text": "price_per_liter"
+                            },
+                            {
+                                "label": "Type17",
+                                "text": "decimal(10,3)"
+                            },
+                            {
+                                "label": "Key18",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field18",
+                                "text": "total_amount"
+                            },
+                            {
+                                "label": "Type18",
+                                "text": "decimal(10,2)"
+                            },
+                            {
+                                "label": "Key19",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field19",
+                                "text": "currency"
+                            },
+                            {
+                                "label": "Type19",
+                                "text": "varchar(3) DEFAULT 'EUR' NOT NULL"
+                            },
+                            {
+                                "label": "Key20",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field20",
+                                "text": "field_confidence"
+                            },
+                            {
+                                "label": "Type20",
+                                "text": "JSON"
+                            },
+                            {
+                                "label": "Key21",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field21",
+                                "text": "is_user_confirmed"
+                            },
+                            {
+                                "label": "Type21",
+                                "text": "BOOLEAN DEFAULT false NOT NULL"
+                            },
+                            {
+                                "label": "Key22",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field22",
+                                "text": "confirmed_at"
+                            },
+                            {
+                                "label": "Type22",
+                                "text": "timestamp"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "8QIqdJIPoqgs",
+                        "class": "ERDEntityBlock4",
+                        "textAreas": [
+                            {
+                                "label": "Name",
+                                "text": "route_cache"
+                            },
+                            {
+                                "label": "Key1",
+                                "text": "PK"
+                            },
+                            {
+                                "label": "Field1",
+                                "text": "from_lat"
+                            },
+                            {
+                                "label": "Type1",
+                                "text": "decimal(8,6) NOT NULL"
+                            },
+                            {
+                                "label": "Key2",
+                                "text": "PK"
+                            },
+                            {
+                                "label": "Field2",
+                                "text": "from_lon"
+                            },
+                            {
+                                "label": "Type2",
+                                "text": "decimal(9,6) NOT NULL"
+                            },
+                            {
+                                "label": "Key3",
+                                "text": "PK"
+                            },
+                            {
+                                "label": "Field3",
+                                "text": "to_lat"
+                            },
+                            {
+                                "label": "Type3",
+                                "text": "decimal(8,6) NOT NULL"
+                            },
+                            {
+                                "label": "Key4",
+                                "text": "PK"
+                            },
+                            {
+                                "label": "Field4",
+                                "text": "to_lon"
+                            },
+                            {
+                                "label": "Type4",
+                                "text": "decimal(9,6) NOT NULL"
+                            },
+                            {
+                                "label": "Key5",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field5",
+                                "text": "distance_meters"
+                            },
+                            {
+                                "label": "Type5",
+                                "text": "integer NOT NULL"
+                            },
+                            {
+                                "label": "Key6",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field6",
+                                "text": "duration_seconds"
+                            },
+                            {
+                                "label": "Type6",
+                                "text": "integer NOT NULL"
+                            },
+                            {
+                                "label": "Key7",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field7",
+                                "text": "geometry_geojson"
+                            },
+                            {
+                                "label": "Type7",
+                                "text": "JSON"
+                            },
+                            {
+                                "label": "Key8",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field8",
+                                "text": "raw_response"
+                            },
+                            {
+                                "label": "Type8",
+                                "text": "JSON"
+                            },
+                            {
+                                "label": "Key9",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field9",
+                                "text": "created_at"
+                            },
+                            {
+                                "label": "Type9",
+                                "text": "timestamp NOT NULL"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "-iJq0nSiAdwN",
+                        "class": "StickiesStickyNoteBlock",
+                        "textAreas": [
+                            {
+                                "label": "Text",
+                                "text": "geocode_cache key\naddress_hash is the SHA-256 hash of the normalized address.\nThis key enables address-level geocoding reuse."
+                            },
+                            {
+                                "label": "ReadonlyAttributionText",
+                                "text": ""
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "8QIqzHztYMr7",
+                        "class": "ERDEntityBlock4",
+                        "textAreas": [
+                            {
+                                "label": "Name",
+                                "text": "geocode_cache"
+                            },
+                            {
+                                "label": "Key1",
+                                "text": "PK"
+                            },
+                            {
+                                "label": "Field1",
+                                "text": "address_hash"
+                            },
+                            {
+                                "label": "Type1",
+                                "text": "char(64) sha256 NOT NULL"
+                            },
+                            {
+                                "label": "Key2",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field2",
+                                "text": "address_raw"
+                            },
+                            {
+                                "label": "Type2",
+                                "text": "varchar(512) NOT NULL"
+                            },
+                            {
+                                "label": "Key3",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field3",
+                                "text": "latitude"
+                            },
+                            {
+                                "label": "Type3",
+                                "text": "decimal(9,6) NOT NULL"
+                            },
+                            {
+                                "label": "Key4",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field4",
+                                "text": "longitude"
+                            },
+                            {
+                                "label": "Type4",
+                                "text": "decimal(9,6) NOT NULL"
+                            },
+                            {
+                                "label": "Key5",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field5",
+                                "text": "raw_response"
+                            },
+                            {
+                                "label": "Type5",
+                                "text": "JSON"
+                            },
+                            {
+                                "label": "Key6",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field6",
+                                "text": "created_at"
+                            },
+                            {
+                                "label": "Type6",
+                                "text": "timestamp NOT NULL"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "8QIqE3lL14P2",
+                        "class": "ERDEntityBlock4",
+                        "textAreas": [
+                            {
+                                "label": "Name",
+                                "text": "profiles"
+                            },
+                            {
+                                "label": "Key1",
+                                "text": "PK"
+                            },
+                            {
+                                "label": "Field1",
+                                "text": "id"
+                            },
+                            {
+                                "label": "Type1",
+                                "text": "UUID NOT NULL"
+                            },
+                            {
+                                "label": "Key5",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field5",
+                                "text": "email"
+                            },
+                            {
+                                "label": "Type5",
+                                "text": "TEXT UNIQUE NOT NULL"
+                            },
+                            {
+                                "label": "Key6",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field6",
+                                "text": "password_hash"
+                            },
+                            {
+                                "label": "Type6",
+                                "text": "TEXT NOT NULL"
+                            },
+                            {
+                                "label": "Key2",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field2",
+                                "text": "name"
+                            },
+                            {
+                                "label": "Type2",
+                                "text": "TEXT NOT NULL"
+                            },
+                            {
+                                "label": "Key3",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field3",
+                                "text": "color"
+                            },
+                            {
+                                "label": "Type3",
+                                "text": "TEXT (hex) NOT NULL"
+                            },
+                            {
+                                "label": "Key4",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field4",
+                                "text": "created_at"
+                            },
+                            {
+                                "label": "Type4",
+                                "text": "timestamp NOT NULL"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "JnJqgq0tG7bg",
+                        "class": "ERDEntityBlock4",
+                        "textAreas": [
+                            {
+                                "label": "Name",
+                                "text": "vehicles"
+                            },
+                            {
+                                "label": "Key1",
+                                "text": "PK"
+                            },
+                            {
+                                "label": "Field1",
+                                "text": "id"
+                            },
+                            {
+                                "label": "Type1",
+                                "text": "UUID NOT NULL"
+                            },
+                            {
+                                "label": "Key2",
+                                "text": "FK"
+                            },
+                            {
+                                "label": "Field2",
+                                "text": "profile_id"
+                            },
+                            {
+                                "label": "Type2",
+                                "text": "UUID NOT NULL"
+                            },
+                            {
+                                "label": "Key3",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field3",
+                                "text": "name"
+                            },
+                            {
+                                "label": "Type3",
+                                "text": "TEXT NOT NULL"
+                            },
+                            {
+                                "label": "Key4",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field4",
+                                "text": "created_at"
+                            },
+                            {
+                                "label": "Type4",
+                                "text": "timestamp NOT NULL"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "4Yms7vZWnkEh",
+                        "class": "ERDEntityBlock2",
+                        "textAreas": [
+                            {
+                                "label": "Name",
+                                "text": "sessions"
+                            },
+                            {
+                                "label": "Key1",
+                                "text": "PK"
+                            },
+                            {
+                                "label": "Field1",
+                                "text": "token TEXT NOT NULL"
+                            },
+                            {
+                                "label": "Key2",
+                                "text": "FK"
+                            },
+                            {
+                                "label": "Field2",
+                                "text": "profile_id UUID NOT NULL"
+                            },
+                            {
+                                "label": "Key3",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field3",
+                                "text": "created_at TIMESTAMP NOT NULL"
+                            },
+                            {
+                                "label": "Key4",
+                                "text": ""
+                            },
+                            {
+                                "label": "Field4",
+                                "text": "expires_at TIMESTAMP NOT NULL"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    }
+                ],
+                "lines": [
+                    {
+                        "id": "8kJqebVJN-j4",
+                        "endpoint1": {
+                            "style": "Centered Hollow Circle",
+                            "connectedTo": "8QIqzHztYMr7"
+                        },
+                        "endpoint2": {
+                            "style": "Hollow Arrow",
+                            "connectedTo": "8QIqujXZAS6D"
+                        },
+                        "textAreas": [
+                            {
+                                "label": "t0",
+                                "text": "0..1 cache entry ↔ 0..many receipts"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "JnJquiN9r315",
+                        "endpoint1": {
+                            "style": "Hollow Arrow",
+                            "connectedTo": "JnJqgq0tG7bg"
+                        },
+                        "endpoint2": {
+                            "style": "Hollow Arrow",
+                            "connectedTo": "8QIqujXZAS6D"
+                        },
+                        "textAreas": [
+                            {
+                                "label": "t0",
+                                "text": "1 vehicle ↔ 0..many receipts"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "8kJqT86jEfEh",
+                        "endpoint1": {
+                            "style": "Centered Hollow Circle",
+                            "connectedTo": "8QIqdJIPoqgs"
+                        },
+                        "endpoint2": {
+                            "style": "Hollow Arrow",
+                            "connectedTo": "8QIqujXZAS6D"
+                        },
+                        "textAreas": [
+                            {
+                                "label": "t0",
+                                "text": "0..1 cache entry ↔ 0..many receipts"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "JnJqeO0FoYF2",
+                        "endpoint1": {
+                            "style": "Hollow Arrow",
+                            "connectedTo": "8QIqE3lL14P2"
+                        },
+                        "endpoint2": {
+                            "style": "Hollow Arrow",
+                            "connectedTo": "JnJqgq0tG7bg"
+                        },
+                        "textAreas": [
+                            {
+                                "label": "t0",
+                                "text": "1 profile ↔ 0..many vehicles"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "JnJqRIDPET5u",
+                        "endpoint1": {
+                            "style": "Hollow Arrow",
+                            "connectedTo": "8QIqE3lL14P2"
+                        },
+                        "endpoint2": {
+                            "style": "Hollow Arrow",
+                            "connectedTo": "8QIqujXZAS6D"
+                        },
+                        "textAreas": [
+                            {
+                                "label": "t0",
+                                "text": "1 profile ↔ 0..many receipts (denormalized profile_id)"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    },
+                    {
+                        "id": "O1msd23V.qYN",
+                        "endpoint1": {
+                            "style": "None",
+                            "connectedTo": "8QIqE3lL14P2"
+                        },
+                        "endpoint2": {
+                            "style": "None",
+                            "connectedTo": "4Yms7vZWnkEh"
+                        },
+                        "textAreas": [
+                            {
+                                "label": "t0",
+                                "text": "1 profile <-> 1 session"
+                            }
+                        ],
+                        "customData": [],
+                        "linkedData": []
+                    }
+                ],
+                "groups": [],
+                "layers": []
+            },
+            "customData": [],
+            "linkedData": []
+        }
+    ],
+    "data": {
+        "collections": []
+    },
+    "accountId": 217762632
+}
