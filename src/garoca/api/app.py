@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from typing import AsyncGenerator
-from db.connection import get_connection
-from db.schema import create_database
+from garoca.db.connection import get_connection
+from garoca.db.schema import create_database
+from garoca.api.routes import health
 
 
 @asynccontextmanager
@@ -16,3 +17,5 @@ async def lifespan(app: FastAPI) -> AsyncGenerator:
 
 
 app = FastAPI(lifespan=lifespan)
+app.include_router(health.router)
+

@@ -1,6 +1,8 @@
-from garoca.api import app
+from fastapi import APIRouter
+
+router = APIRouter()
 
 
-@app.get("/health")
+@router.get("/health")
 async def read_health():
     return {"status": "garoca is healthy"}
